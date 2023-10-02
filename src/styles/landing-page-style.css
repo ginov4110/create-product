@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+}
+
+.container-fluid {
+  box-sizing: content-box;
+  padding: 0;
+}
+
+.topHero {
+  background-color: #37517e;
+}
+
+.bground {
+  display: flex;
+  flex-direction: row;
+  background-color: #37517e;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  padding: 12px;
+}
+
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-light {
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+.productTitle {
+  font-family: "Roboto", sans-serif;
+}
+
+.tag-line1 {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.tag-line2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: white;
+}
+
+.heroImg {
+  height: 400px;
+  width: 500px;
+}
+
+.btn-info {
+  border-radius: 30px;
+}
+
+.btn-dark {
+  border: none;
+  margin-left: 35px;
+}
+
+.btnStarted {
+  display: inline-block;
+  background-color: #47b2e4;
+  height: 3rem;
+  width: 9rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  margin-right: 3rem;
+}
+
+.btnStarted:hover {
+  background-color: #58c7fa;
+  font-weight: 600;
+}
+
+/* End of Hero Section */
+
+/* Join Section */
+.joinSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-color: #f3f5fa;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  justify-content: center;
+  width: 60%;
+  flex: none;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+.btn-info {
+  z-index: 9;
+}
+
+.joinSection p {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #37517e;
+  margin-bottom: 1rem;
+}
+
+.join {
+  font-family: "Open sans", sans-serif;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+#joinInput {
+  height: 2rem;
+  width: 75vh;
+  border: none;
+  border-radius: 50px;
+}
+
+.groupTextBtn {
+  flex-direction: row;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  width: 40vh;
+}
+
+.footer1 p,
+a {
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+}
+
+.footerTitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.footerItems {
+  font-size: 20px;
+  color: #777;
+}
+
+.circle {
+  height: 36px;
+  width: 36px;
+  background-color: #47b2e4;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer2 {
+  width: 100%;
+  height: 7vh;
+  background-color: #37517e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer2 p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 7vh;
+}
+
+.footer2 a {
+  text-decoration: none;
+  color: #47b2e4;
+  line-height: 7vh;
+}
