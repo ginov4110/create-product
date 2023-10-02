@@ -28,6 +28,7 @@ function Table(props) {
             <td>{data.id}</td>
             <td>{data.productName}</td>
             <td>{data.productCategory}</td>
+            <td>{data.productImage}</td>
             <td>{data.productFreshness}</td>
             <td>{data.productPrice}</td>
           </tr>

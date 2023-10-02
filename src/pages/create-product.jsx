@@ -14,6 +14,7 @@ function CreateProduct() {
   const [language, setLanguage] = useState("en");
   const [productName, setProductName] = useState("");
   const [productCategory, setProductCategory] = useState("");
+  const [productImage, setProductImage] = useState("");
   const [productFreshness, setProductFreshness] = useState();
   const [productPrice, setProductPrice] = useState(0);
   const [errorText, setErrorText] = useState("");
@@ -38,6 +39,8 @@ function CreateProduct() {
       return alert("Please enter a valid product name");
     } else if (productCategory == "") {
       return alert("Please enter a valid product name");
+    } else if (productImage == "") {
+      return alert("Please enter a valid product name");
     } else if (productFreshness == "") {
       return alert("Please enter a valid product name");
     } else if (productPrice == 0) {
@@ -47,6 +50,7 @@ function CreateProduct() {
         id: products.length + 1,
         productName: productName,
         productCategory: productCategory,
+        productImage: productImage,
         productFreshness: productFreshness,
         productPrice: productPrice,
       };
@@ -99,6 +103,9 @@ function CreateProduct() {
           label="Image of Product"
           type="file"
           className="form-control btn btn-primary imgProduct"
+          accept="image/jpg, image/jpeg, image/png"
+          value={productImage}
+          onChange={(e) => setProductImage(e.target.files[0])}
         />
         <Label label="Product Freshness" />
         <br />
@@ -140,6 +147,7 @@ function CreateProduct() {
             "No",
             "Product Name",
             "Product Category",
+            "Product Image",
             "Product Freshness",
             "Product Price",
           ]}
